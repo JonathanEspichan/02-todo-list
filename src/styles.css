@@ -1,0 +1,68 @@
+.cursor-pointer {
+    cursor: pointer;
+  }
+  
+  .nav-link.neutral {
+    color: #6b7280 !important;
+  }
+  
+  .nav-link.neutral.active {
+    color: #000000 !important;
+  }
+  
+  .btn-delete-task {
+    display: none;
+    opacity: 0;
+    animation: fade-in 0.5s ease-in-out forwards;
+    color: #374151;
+  }
+  
+  .btn-delete-task:hover {
+    color: #dc3545;
+  }
+  
+  .list-group-item:hover .btn-delete-task {
+    display: block;
+    opacity: 1;
+  }
+  
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .fondo-azul {
+    background: linear-gradient(to bottom, #000066, #2222ed); /* Cambiar de color fondo */
+    color: #fff; 
+  }
+  
+  .btn-agregar {
+    background-color: #FFD700; 
+    color: #000; 
+    border: none; 
+  }
+
+
+  .list-group-item {
+    position: relative; 
+  }
+  
+  .list-group-item:hover {
+    background-color: #FFD700; 
+    color: #000; 
+    cursor: pointer; 
+  }
+  
+  .list-group-item .btn-delete-task {
+    color: #dc3545; /* Cambia el color del botón a rojo */
+    position: absolute; 
+    right: 10px; 
+    top: 50%; /* Coloca el botón en el centro verticalmente */
+    transform: translateY(-50%); /* Alinea verticalmente el botón */
+  }
+  .texto-blanco {
+    color: #fff; 
+  }
